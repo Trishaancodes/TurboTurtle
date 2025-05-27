@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+<div class="body">
+  <div class="card text-bg-dark custom-size">
+    <img src="/images/index2.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay d-flex align-items-center">
+      <div class="overlay-box p-4 rounded">
+        <h5 class="card-title">About us</h5>
+        <p class="card-text">
+          Turbo Turtle Excavation is a locally owned and operated company providing reliable and efficient excavation services across the Lower Mainland. Led by Matt Trudell, we specialize in excavation, backfill, concrete removal, hardscaping, land clearing, brush work, and snow removal. With a commitment to quality and customer satisfaction, Turbo Turtle combines precision with power—just like our logo suggests.
+        </p>
+        <p class="card-text contact"><small class="text-body-secondary">Contact Us: 778-240-1716</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <div class="row g-4">
+    <% card.forEach(card => { %>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-3 fade-card" style="max-width: 100%;">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="<%= card.img %>" class="img-fluid rounded-start" alt="<%= card.title %>">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                 <a href="<%= card.link %>">
+                <h5 class="card-title"><%= card.title %></h5>
+              </a>
+                <p class="card-text"><%= card.text %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+
+<%- include('partials/footer') %>
