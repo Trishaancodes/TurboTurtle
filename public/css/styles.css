@@ -16,8 +16,9 @@ display: block;
     color: black;
     bottom: 0;
 }
-.custom-size{
-    display: block;
+.custom-size {
+  max-height: 90vh;
+  overflow: hidden;
 }
 
  .custom-overlay{
@@ -37,10 +38,23 @@ display: block;
   opacity: 1;
   transform: translateY(0);
 }
-.contact{
-    background-color: aliceblue;
-    opacity: 0.8;
-    display: inline-block;
-    padding: 2%;
-    font-size: large;
+.contact {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.card-img {
+  object-fit: cover;
+  height: 100%;
+}
+.overlay-box {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  width: 100%;
 }
