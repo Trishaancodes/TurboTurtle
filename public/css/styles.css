@@ -17,7 +17,7 @@ display: block;
     bottom: 0;
 }
 .custom-size {
-  max-height: 90vh;
+  position: relative;
   overflow: hidden;
 }
 
@@ -54,7 +54,32 @@ display: block;
 .overlay-box {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
   max-width: 100%;
   width: 100%;
 }
+@media (max-width: 767.98px) {
+  .overlay-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .overlay-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-img {
+    object-position: center top;
+  }
+
+  .custom-size {
+    height: auto;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
