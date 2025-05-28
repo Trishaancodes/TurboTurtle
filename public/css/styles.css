@@ -71,6 +71,7 @@ display: block;
 
   .card-img {
     object-position: center top;
+    height: 70vh
   }
 
   .custom-size {
